@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="account__wrapper">
+        <div class="account--login">
+          <a href="javascript:void(0)">Sign in</a>
+          <div class="account__dropdown">
+            <form action="" hidden>
+              <label><input type="text" /></label>
+              <label><input type="password" name="" id="" /></label>
+              <label
+                ><input type="submit" value="Sign in" class="account__submit"
+              /></label>
+            </form>
+          </div>
+        </div>
+        <div class="account--logout">
+          <a href="javascript:void(0)">Sign out</a>
+        </div>
+        <div class="account--register">
+          <a href="javascript:void(0)">Sign up</a>
+          <div class="account__dropdown">
+            <form action="" hidden>
+              <label><input type="text" /></label>
+              <label><input type="password" name="" id="" /></label>
+              <label
+                ><input type="submit" value="Sign in" class="account__submit"
+              /></label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <form class="q">
+        <input type="text" class="q__calendar" hidden />
+        <input type="text" class="q__task" />
+        <input type="submit" class="q__submit" />
+      </form>
+      <div class="list">
+        <div class="card">
+          <div class="card__task"></div>
+          <form action="" class="card__form"></form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
