@@ -1,0 +1,68 @@
+
+{% load static %}
+{% load livereload_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="account__wrapper logged-in">
+        <div class="account account--login">
+          <a href="javascript:void(0)">Sign in</a>
+          <div class="account__dropdown">
+            <form action="" hidden>
+              <label><input type="text" /></label>
+              <label><input type="password" name="" id="" /></label>
+              <label
+                ><input type="submit" value="Sign in" class="account__submit"
+              /></label>
+            </form>
+          </div>
+        </div>
+        <div class="account account--logout" hidden>
+          <a href="javascript:void(0)">Sign out</a>
+        </div>
+        <div class="account account--register">
+          <a href="javascript:void(0)">Sign up</a>
+          <div class="account__dropdown">
+            <form action="" hidden>
+              <label><input type="text" /></label>
+              <label><input type="password" name="" id="" /></label>
+              <label
+                ><input type="submit" value="Sign in" class="account__submit"
+              /></label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <form class="q">
+        <input type="text" class="q__calendar" hidden />
+        <input type="text" class="q__task" />
+        <input type="submit" class="q__submit" />
+      </form>
+      <div class="list">
+        <div class="card">
+          <div class="card__content">
+            <div class="card__task">Go to shop and eat some breakfast</div>
+            <div class="card__date">30.03.2002</div>
+          </div>
+          <form action="" class="card__form">
+            <a href="" class="card__remove">Remove</a>
+            <a href="" class="card__edit">Edit</a>
+          </form>
+        </div>
+      </div>
+    </main>
+    {% livereload_script %}
+  </body>
+</html>

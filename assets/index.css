@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav,
+main {
+  background-color: hsl(0, 0%, 100%);
+}
+
+nav {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.account__wrapper {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.logged-in .account--login,
+.logged-in .account--register {
+  display: none;
+}
+
+.logged-in .account--logout {
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.q {
+  margin-bottom: 1rem;
+}
+
+.q__task {
+  width: 40%;
+}
+
+.card {
+  border: solid rgba(0, 0, 0, 40%) 1px;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.card__date {
+    font-size: .9rem;
+}
+
+.card__form {
+    font-size: .8rem;
+}
+
+.card__edit {
+    margin-left: .5rem;
+}
